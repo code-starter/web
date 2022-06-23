@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>피자 주문</title>
+</head>
+<body>
+  <h3>&lt;피자 주문사이트&gt;</h3>
+  <form action="#">
+    <label for="namelp">고객명 :</label>
+    <input type="text" id="namelp"><br><br>
+
+    <label for="tellp">전화번호 :</label>
+    <input type="tel" id="tellp"><br><br>
+
+    <label for="maillp">E-mail :</label>
+    <input type="email" id="maillp"><br><br>
+
+    <label for="pizzalp">피자선택 :</label>
+    <select name="pizza" id="pizzalp">
+      <option value="">피자를 선택하세요</option>
+      <option value="Bingo">피자 빙고</option>
+      <option value="Domino">도미노 피자</option>
+      <option value="School">피자 스쿨</option>
+      <option value="Mr">미스터 피자</option>
+    </select><br>
+
+    <fieldset>
+      <legend>피자 사이즈</legend>
+      
+      <input type="radio" name="small" id="smalllp">
+      <label for="smalllp">Small</label><br><br>
+
+      <input type="radio" name="medium" id="mediumlp">
+      <label for="mediumlp">Medium</label><br><br>
+
+      <input type="radio" name="large" id="largelp">
+      <label for="largelp">Large</label><br><br>
+    </fieldset>
+    <fieldset>
+      <legend>토핑 선택</legend>
+
+      <input type="checkbox" name="toping" id="baconlp" value="bacon">
+      <label for="baconlp">베이컨</label><br><br>
+
+      <input type="checkbox" name="toping" id="cheeselp" value="cheese">
+      <label for="cheeselp">치즈</label><br><br>
+
+      <input type="checkbox" name="toping" id="onionlp" value="onion">
+      <label for="onionlp">양파</label><br><br>
+
+      <input type="checkbox" name="toping" id="mushroomlp" value="mushroom">
+      <label for="mushroomlp">버섯</label><br><br>
+    </fieldset><br>
+
+    <label for="timelp">희망배송시간 :</label>
+    <input type="time" name="time" id="timelp"><br><br>
+    
+    <label for="textlp">배송시 요청사항 :</label><br>
+    <textarea name="text" id="textlp" cols="30" rows="10"></textarea><br><br>
+
+    <button type="submit">주문하기</button>
+  </form>
+</body>
+</html>
