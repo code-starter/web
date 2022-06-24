@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>document</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>납품자 정보</legend>
+      <ol>
+        <li>
+          <label for="namelp">납품자명 :</label>
+          <input type="text" name="name" id="namelp"><br><br>
+        </li>
+        <li>
+          <label for="mail">email :</label>
+          <input type="email" name="email" id="mail"><br><br>
+        </li>
+        <li>
+          <label for="page">홈페이지 :</label>
+          <input type="url" name="homepage" id="page" value="http://"><br><br>
+        </li>
+        <li>
+          <label for="regionlp">지역 :</label>
+          <select name="region" id="regionlp">
+            <option value="busan">부산</option>
+            <option value="seoul">서울</option>
+          </select>
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset>
+      <legend>납품 정보</legend>
+      <ul>
+        <li>
+          <label for="productlp">상품명 :</label>
+          <input type="text" name="product" id="productlp"><br><br>
+        </li>
+        <li>
+          <label for="countlp">납품수량 :</label>
+          <input type="number" name="count" id="countlp" placeholder="최소 100" min="100"><br><br>
+        </li>
+        <li>
+          <label for="gradelp">납품등급 :</label>
+          <input type="range" name="gradae" id="gradelp" min="1" max="5" step="1">
+        </li>
+        <li>
+          <label for="messagelp">기타사항 :</label><br>
+          <textarea name="message" id="messagelp" cols="30" rows="10"></textarea>
+        </li>
+      </ul>
+    </fieldset>
+    <button type="submit">send message</button>
+  </form>
+</body>
+</html>
